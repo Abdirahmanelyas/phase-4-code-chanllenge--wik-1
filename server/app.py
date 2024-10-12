@@ -4,13 +4,13 @@ from flask import Flask, request, make_response
 from flask_migrate import Migrate
 from models import db, Hero, Power, HeroPower
 
-# its here where flask is initilized
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
-#  its here where Initializing Flask-Migrate for database migrations done 
+
 migrate = Migrate(app, db)
 
 db.init_app(app)
@@ -168,7 +168,6 @@ def get_hero_powers():
 
 
         
-# here you Run the Flask application on port 5550 
 
 if __name__ == '__main__':
     app.run(port=5550, debug=True)

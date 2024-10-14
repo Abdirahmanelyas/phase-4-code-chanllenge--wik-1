@@ -109,7 +109,7 @@ Add validations to the `Power` model:
 
 - `description` must be present and at least 20 characters long
 
-## Routes
+## Routes:
 
 Set up the following routes. Make sure to return JSON data in the format
 specified along with the appropriate HTTP verb.
